@@ -8,16 +8,22 @@ export default {
   data() {
     return {
       store,
+      projects: []
     }
   },
-  methods: {
-
-
-  },
   created() {
-
+    this.getProjects()
 
   },
+  methods: {
+    getProjects() {
+      axios.get(`${this.store.Url}api/projects`).then((response) => {
+        console.log(response.data.results);
+      })
+    }
+
+  },
+
 }
 </script>
 <template lang="">
