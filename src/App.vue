@@ -1,34 +1,21 @@
 <script>
-import { store } from './store.js';
-import axios from 'axios';
+
+import Header from './components/Header.vue';
+import Main from './components/Main.vue';
 export default {
   components: {
+    Header,
+    Main
+  },
 
-  },
-  data() {
-    return {
-      store,
-      projects: []
-    }
-  },
-  created() {
-    this.getProjects()
 
-  },
-  methods: {
-    getProjects() {
-      axios.get(`${this.store.Url}api/projects`).then((response) => {
-        console.log(response.data.results);
-      })
-    }
-
-  },
 
 }
 </script>
 <template lang="">
   <div>
-    
+    <Header/>
+    <Main/>
   </div>
 </template>
 
