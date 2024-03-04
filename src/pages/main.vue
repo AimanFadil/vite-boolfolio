@@ -36,13 +36,10 @@ export default {
                 <div class="col-12 text-center py-3">
                     <h1>Projects</h1>
                 </div>
-                <div class="container">
+                <div class="contain">
                     <div class="row ">
-                        <div class="col-3 p-4">
-                            <div class="content" >
-                                <ProjectCard v-for="project, index in projects" :key="index" :project="project"/>
-
-                            </div>
+                        <div class=" d-flex flex-wrap">
+                            <ProjectCard  v-for="project, index in projects" :key="index" :project="project"/>
                         </div>
                     </div>
                 </div>
@@ -55,10 +52,8 @@ export default {
 @use '../styles/generals.scss';
 
 main {
-    .content {
-        display: flex;
-        flex-direction: column;
-
-    }
+   .contain{
+    max-width: 1400vw;
+   }
 }
 </style>./Main.vue/index.js

@@ -13,8 +13,8 @@ export default {
   <header class="header">
     <div class="title">Vite Boolfolio Projects</div>
     <ul class="list">
+      <li class="text-white"> <router-link :to="{name:'home'}">home</router-link></li>
       <li class="text-white"> <router-link :to="{name:'main'}">Project</router-link></li>
-      <li>technology</li>
       <li>Type</li>
     </ul>
   </header>
@@ -23,7 +23,7 @@ export default {
 <style lang="scss" scoped>
 @use '../styles/generals.scss';
 
-$blu: #1b97d1;
+$blu: #e4c518;
 
 .header {
   height: 100px;
