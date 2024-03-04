@@ -1,11 +1,10 @@
 <script>
 
 import Header from './components/Header.vue';
-import Main from './components/Main.vue';
 export default {
   components: {
     Header,
-    Main
+    
   },
 
 
@@ -15,10 +14,10 @@ export default {
 <template lang="">
   <div>
     <Header/>
-    <Main/>
+    <router-view></router-view>
   </div>
 </template>
 
 <style lang="scss" >
 @use './styles/generals.scss';
-</style>
+</style>./pages/Main.vue

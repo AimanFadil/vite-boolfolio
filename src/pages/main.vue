@@ -3,7 +3,7 @@ import { store } from '../store.js';
 import ProjectCard from './ProjectCard.vue';
 import axios from 'axios';
 export default {
-    name: 'Main',
+    name: 'main',
     components: {
         ProjectCard
     },
@@ -61,4 +61,4 @@ main {
 
     }
 }
-</style>
+</style>./Main.vue/index.js
