@@ -15,7 +15,7 @@ export default {
     methods:{
         getProjectSingle(){
             axios.get(`${this.store.Url}api/projects/${this.$route.params.slug}`).then((response) =>{
-                console.log(this.$route); 
+                console.log(response); 
                 this.project = response.data.project;
             })
         }
@@ -26,16 +26,16 @@ export default {
 <template lang="">
    <div class="container">
         <div class="row">
-            <div class="col-12">
+            <div class="col-12 p-5">
                 <div class="card" style="width: 18rem;">
                     <img src="" class="card-img-top">
                     <div class="card-body">
                         <h5 class="card-title">{{ project.nome }}</h5>
-                        <!-- <p class="card-text">{{ project.slug }}</p>
+                        <p class="card-text">{{ project.slug }}</p>
                         <p class="card-text">{{ project.programma }}</p>
                         <p class="card-text">{{ project.data }}</p>
                         <p class="card-text">{{ project.descrizione }}</p>
-                        <p class="card-text">{{ project.emulazione }}</p> -->
+                        <p class="card-text">{{ project.emulazione }}</p>
                     </div>
                 </div>
             </div>
