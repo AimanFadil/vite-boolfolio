@@ -3,7 +3,7 @@ import { store } from '../store.js';
 import ProjectCard from './ProjectCard.vue';
 import axios from 'axios';
 export default {
-    name: 'main',
+    name: 'blog',
     components: {
         ProjectCard
     },
@@ -22,7 +22,7 @@ export default {
         getProjects() {
             axios.get(`${this.store.Url}api/projects`).then((response) => {
                 this.projects = response.data.results;
-                console.log(response.data.results);
+                
             })
         }
 
@@ -53,7 +53,7 @@ export default {
 
 main {
    .contain{
-    max-width: 1400vw;
+    max-width: 1600px;
    }
 }
 </style>./Main.vue/index.js

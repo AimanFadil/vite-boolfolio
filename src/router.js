@@ -1,7 +1,9 @@
 import { createRouter, createWebHistory } from 'vue-router';
 
 import home from './pages/home.vue';
-import main from './pages/main.vue';
+import blog from './pages/blog.vue';
+import projectSingle from './pages/projectSingle.vue';
+import nonTrovata from './pages/nonTrovata.vue';
 
 const router = createRouter({
     history: createWebHistory(),
@@ -12,9 +14,19 @@ const router = createRouter({
             component: home,
         },
         {
-            path: '/main',
-            name: 'main',
-            component: main,
+            path: '/blog',
+            name: 'blog',
+            component: blog,
+        },
+        {
+            path: '/blog/:slug',
+            name: 'projectSingle',
+            component: projectSingle,
+        },
+        {
+            path: '/:catchAll(.*)',
+            name: 'non-trovata',
+            component: nonTrovata,
         },
     ]
 });

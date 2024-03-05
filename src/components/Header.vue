@@ -14,7 +14,7 @@ export default {
     <div class="title">Vite Boolfolio Projects</div>
     <ul class="list">
       <li class="text-white"> <router-link :to="{name:'home'}">home</router-link></li>
-      <li class="text-white"> <router-link :to="{name:'main'}">Project</router-link></li>
+      <li class="text-white"> <router-link :to="{name:'blog'}">Project</router-link></li>
       <li>Type</li>
     </ul>
   </header>

@@ -16,13 +16,14 @@ export default {
     <div class="p-4">
 
         <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top">
+            <img src="" class="card-img-top">
             <div class="card-body">
-                <h5 class="card-title">{{ project.nome }}</h5>
+                <h5 class="card-title"><router-link :to="{ name: 'projectSingle' , params: { slug: project.slug } }">{{ project.nome }}</router-link></h5>
                 <p class="card-text">{{ project.slug }}</p>
                 <p class="card-text">{{ project.programma }}</p>
                 <p class="card-text">{{ project.data }}</p>
                 <p class="card-text">{{ project.descrizione }}</p>
+                <p class="card-text">{{ project.emulazione }}</p>
             </div>
         </div>
     </div>
