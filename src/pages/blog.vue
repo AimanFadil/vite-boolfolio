@@ -11,7 +11,9 @@ export default {
     data() {
         return {
             store,
-            projects: []
+            projects: [],
+            /* paginaAttiva :1,
+            prossPagina : null */
         }
     },
     created() {
@@ -19,9 +21,16 @@ export default {
 
     },
     methods: {
-        getProjects() {
-            axios.get(`${this.store.Url}api/projects`).then((response) => {
+        getProjects(/* numPagina */) {
+            axios.get(`${this.store.Url}api/projects`/* ,{
+                params: {
+                    pagina : numPagina
+                }
+            } */).then((response) => {
                 this.projects = response.data.results;
+                /* console.log(response.data.results.paginaAttiva);
+                this.paginaAttiva = response.data.results.paginaAttiva;
+                this.prossPagina = response.data.results.prossPagina; */
                 
             })
         }
@@ -41,6 +50,18 @@ export default {
                         <div class=" d-flex flex-wrap">
                             <ProjectCard  v-for="project, index in projects" :key="index" :project="project"/>
                         </div>
+                        <!-- <div class="col-12">
+                            <div class="content">
+                                <ul>
+                                    <li>
+                                        <button @click="getProjects( paginaAttiva - 1)">Indietro</button>
+                                    </li>
+                                    <li>
+                                        <button @click="getProjects( paginaAttiva + 1)">Avanti</button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -56,4 +77,4 @@ main {
     max-width: 1600px;
    }
 }
-</style>./Main.vue/index.js
+</style>
