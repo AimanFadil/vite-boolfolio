@@ -4,6 +4,7 @@ import home from './pages/home.vue';
 import blog from './pages/blog.vue';
 import projectSingle from './pages/projectSingle.vue';
 import nonTrovata from './pages/nonTrovata.vue';
+import Contacts from './pages/Contacts.vue';
 
 const router = createRouter({
     history: createWebHistory(),
@@ -22,6 +23,11 @@ const router = createRouter({
             path: '/blog/:slug',
             name: 'projectSingle',
             component: projectSingle,
+        },
+        {
+            path: '/contacts',
+            name: 'contacts',
+            component: Contacts,
         },
         {
             path: '/:catchAll(.*)',

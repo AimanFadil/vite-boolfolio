@@ -15,7 +15,7 @@ export default {
     <ul class="list">
       <li class="text-white"> <router-link :to="{name:'home'}">HOME</router-link></li>
       <li class="text-white"> <router-link :to="{name:'blog'}">BLOG</router-link></li>
-      
+      <li class="text-white"> <router-link :to="{name:'contacts'}">CONTACTS</router-link></li>
     </ul>
   </header>
 </template>
