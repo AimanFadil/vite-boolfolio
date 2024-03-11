@@ -53,7 +53,7 @@ export default {
     <div class="col-12 p-4">
         <form @submit.prevent="getMail()" method="POST" >
             <div class="form-group py-2">
-                <label for="nome" class="control-label">Nome</label>
+                <label for="nome" class="control-label text-white">Nome</label>
                 <input type="text" name="nome" id="nome" placeholder="nome" v-model="nome"
                     class="form-control" :class="errors.nome ? 'is-invalid' : ''">
                 <p v-for="(error, index) in errors.nome" :key="`Errore: ${index}`" class="text-danger">
@@ -61,7 +61,7 @@ export default {
                 </p>
             </div>
             <div class="form-group py-2">
-                <label for="cognome" class="control-label">Cognome</label>
+                <label for="cognome" class="control-label text-white">Cognome</label>
                 <input type="text" name="cognome" id="nome" placeholder="Cognome" v-model="cognome"
                     class="form-control" :class="errors.cognome ? 'is-invalid' : ''">
                 <p v-for="(error, index) in errors.cognome" :key="`Errore: ${index}`" class="text-danger">
@@ -69,7 +69,7 @@ export default {
                 </p>
             </div>
             <div class="form-group py-2">
-                <label for="cell" class="control-label">Telefono</label>
+                <label for="cell" class="control-label text-white">Telefono</label>
                 <input type="text" name="cell" id="cell" placeholder="cell" v-model="cell"
                     class="form-control" :class="errors.cell ? 'is-invalid' : ''">
                 <p v-for="(error, index) in errors.cell" :key="`Errore: ${index}`" class="text-danger">
@@ -77,7 +77,7 @@ export default {
                 </p>
             </div>
             <div class="form-group py-2">
-                <label for="email" class="control-label">Mail</label>
+                <label for="email" class="control-label text-white">Mail</label>
                 <input type="text" name="email" id="email" placeholder="email" v-model="email"
                     class="form-control" :class="errors.email ? 'is-invalid' : ''">
                 <p v-for="(error, index) in errors.email" :key="`Errore: ${index}`" class="text-danger">
@@ -85,7 +85,7 @@ export default {
                 </p>
             </div>
             <div class="form-group py-2">
-                <label for="messaggio" class="control-label">Meassaggio</label>
+                <label for="messaggio" class="control-label text-white">Messaggio</label>
                 <input type="text" name="messaggio" id="messaggio" placeholder="messaggio" v-model="messaggio"
                     class="form-control" :class="errors.messaggio ? 'is-invalid' : ''">
                 <p v-for="(error, index) in errors.messaggio" :key="`Errore: ${index}`" class="text-danger">

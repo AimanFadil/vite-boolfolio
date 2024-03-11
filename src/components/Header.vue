@@ -10,12 +10,15 @@ export default {
 }
 </script>
 <template lang="">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <header class="header">
     <div class="title">Vite Boolfolio Projects</div>
     <ul class="list">
-      <li class="text-white"> <router-link :to="{name:'home'}">HOME</router-link></li>
-      <li class="text-white"> <router-link :to="{name:'blog'}">BLOG</router-link></li>
-      <li class="text-white"> <router-link :to="{name:'contacts'}">CONTACTS</router-link></li>
+      <li><router-link :to="{name:'home'}">HOME</router-link></li>
+      <li><router-link :to="{name:'blog'}">BLOG</router-link></li>
+      <li><router-link :to="{name:'types'}">TYPES</router-link></li>
+      <li><router-link :to="{name:'technologies'}">TECHNOLOGIES</router-link></li>
+      <li><router-link :to="{name:'contacts'}">CONTACTS</router-link></li>
     </ul>
   </header>
 </template>
@@ -27,7 +30,8 @@ $blu: #e4c518;
 
 .header {
   height: 100px;
-  background-color: $blu;
+  background: rgb(6,0,36);
+  background: linear-gradient(90deg, rgba(6,0,36,1) 27%, rgba(9,9,121,1) 71%, rgba(17,0,255,0.9767981438515081) 100%);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -37,6 +41,7 @@ $blu: #e4c518;
     text-align: center;
     color: #fff;
     font-size: 2rem;
+
   }
 
   .list {
@@ -47,12 +52,14 @@ $blu: #e4c518;
 
     li {
       padding: 0 1rem;
-      color: #fff;
-      font-size: 1.2rem;
 
-      &:not(:last-child) {
-        border-right: 1px solid #fff;
-      }
+    }
+  }
+
+  a{
+    color: #fff;
+    &:hover{
+      color: black;
     }
   }
 }

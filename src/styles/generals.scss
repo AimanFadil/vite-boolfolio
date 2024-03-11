@@ -1,1 +1,8 @@
 @import '/node_modules/bootstrap/scss/bootstrap.scss';
+
+body {
+    /* background-image: url(https://science.nasa.gov/wp-content/uploads/2023/06/webb-flickr-52259221868-30e1c78f0c-4k-jpg.webp); */
+    background: rgb(6, 0, 36);
+    background: linear-gradient(90deg, rgba(6, 0, 36, 1) 27%, rgba(9, 9, 121, 1) 71%, rgba(17, 0, 255, 0.9767981438515081) 100%);
+    font-family: "Lucida Console", "Courier New", monospace;
+}

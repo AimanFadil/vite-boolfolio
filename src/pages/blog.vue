@@ -36,7 +36,7 @@ export default {
        <div class="container">
             <div class="row">
                 <div class="col-12 text-center py-3">
-                    <h1>Projects</h1>
+                    <h1 class="text-white">Projects</h1>
                 </div>
                 <div class="contain">
                     <div class="row ">
