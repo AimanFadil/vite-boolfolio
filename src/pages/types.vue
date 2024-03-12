@@ -40,7 +40,7 @@ export default {
                             <div v-for="type, index in types" :key="index" :type="type">
                                 <div class="p-4">
 
-                                    <div class="card" style="width: 18rem;">
+                                    <div class="card" style="width: 17rem;">
                                         <div class="card-body">
                                             <h5 class="card-title">{{ type.nome }}</h5>
                                             <p class="card-text">{{ type.slug }}</p>

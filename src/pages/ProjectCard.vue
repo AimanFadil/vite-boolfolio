@@ -15,7 +15,7 @@ export default {
 <template lang="">
     <div class="p-4">
 
-        <div class="card" style="width: 18rem;">
+        <div class="card" style="width: 17rem;">
             <img src="" class="card-img-top">
             <div class="card-body">
                 <h5 class="card-title"><router-link :to="{ name: 'projectSingle' , params: { slug: project.slug } }">{{ project.nome }}</router-link></h5>

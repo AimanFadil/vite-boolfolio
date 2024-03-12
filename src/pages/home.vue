@@ -24,7 +24,7 @@ export default {
         <footer>
             <div class="container p-4">
                 <div class="row d-flex justify-content-between">
-                    <h2 class="text-center">My Info and Tool</h2>
+                    
                     <div class="col-5 d-flex p-3">
                         <h3>FRONT-END: </h3>
                         <i class="fa-brands fa-html5 fa-2xl p-2" style="color: #f07400;"></i>

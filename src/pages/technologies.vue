@@ -40,7 +40,7 @@ export default {
                             <div v-for="technology, index in technologies" :key="index" :technology="technology">
                                 <div class="p-4">
 
-                                    <div class="card" style="width: 18rem;">
+                                    <div class="card" style="width: 17rem;">
                                         <div class="card-body">
                                             <h5 class="card-title">{{ technology.nome }}</h5>
                                             <p class="card-text">{{ technology.slug }}</p>
